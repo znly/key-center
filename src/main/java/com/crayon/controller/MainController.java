@@ -1,12 +1,11 @@
 package com.crayon.controller;
 
+import com.crayon.facade.AESFacade;
 import com.crayon.facade.JasyptFacade;
 import com.crayon.model.Result;
-import com.crayon.utils.AESUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
-import org.jasypt.encryption.StringEncryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,7 +26,7 @@ public class MainController {
     JasyptFacade jasyptFacade;
 
     @Autowired
-    AESUtil aesUtil;
+    AESFacade aesFacade;
 
     /**
      * 使用jasypt加密
@@ -82,7 +81,7 @@ public class MainController {
         }
         String encrypt = null;
         try {
-            encrypt = aesUtil.encrypt(str);
+            encrypt = aesFacade.encrypt(str);
         } catch (Exception e) {
             log.error("加密失败", e);
             return Result.fail("加密失败");
@@ -104,7 +103,7 @@ public class MainController {
         }
         String decrypt = null;
         try {
-            decrypt = aesUtil.decrypt(data.get("str"));
+            decrypt = aesFacade.decrypt(data.get("str"));
         } catch (Exception e) {
             log.error("解密失败", e);
             return Result.fail("解密失败");
@@ -127,9 +126,9 @@ public class MainController {
             return Result.fail("明文不能为空");
         }
         String encrypt = null;
-        String vectorKey = AESUtil.generateVectorKey();
+        String vectorKey = AESFacade.generateVectorKey();
         try {
-            encrypt = aesUtil.encrypt(str, vectorKey);
+            encrypt = aesFacade.encrypt(str, vectorKey);
         } catch (Exception e) {
             log.error("加密失败", e);
             return Result.fail("加密失败");
@@ -154,7 +153,7 @@ public class MainController {
         String encrypt = data.get("str");
         String vectorKey = data.get("vectorKey");
         try {
-            decrypt = aesUtil.decrypt(encrypt, vectorKey);
+            decrypt = aesFacade.decrypt(encrypt, vectorKey);
         } catch (Exception e) {
             log.error("解密失败", e);
             return Result.fail("解密失败");

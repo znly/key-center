@@ -1,6 +1,7 @@
-package com.crayon.utils;
+package com.crayon.facade.Impl;
 
 
+import com.crayon.facade.AESFacade;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ import java.util.UUID;
  */
 @Component
 @Slf4j
-public class AESUtil {
+public class AESFacadeImpl implements AESFacade {
 
     /**
      * 加盐值
