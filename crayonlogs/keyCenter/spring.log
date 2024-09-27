@@ -257,3 +257,138 @@
 16:08:48:396  WARN 12409 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
 16:08:48:404  WARN 12409 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
 16:08:48:407  WARN 12409 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:41:00:041  INFO 15355 --- [keyCenter] [main] testAES                                  : Starting testAES using Java 17.0.11 with PID 15355 (started by znly in /Users/znly/IdeaProjects/key-center)
+16:41:00:048  INFO 15355 --- [keyCenter] [main] testAES                                  : No active profile set, falling back to 1 default profile: "default"
+16:41:00:114  INFO 15355 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:41:01:082  INFO 15355 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce4d92fd-1bd5-3e29-95de-cdc981e6bc60
+16:41:01:147  INFO 15355 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:41:01:149  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:41:01:150  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:150  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:150  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:41:01:150  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:41:01:150  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:151  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:41:01:151  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:41:01:151  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:41:01:151  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:151  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:152  INFO 15355 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:41:01:343  INFO 15355 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:41:01:373  INFO 15355 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:41:01:401  INFO 15355 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:41:01:403  INFO 15355 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:41:02:202  INFO 15355 --- [keyCenter] [main] testAES                                  : Started testAES in 5.913 seconds (process running for 7.362)
+16:41:02:208  INFO 15355 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:41:02:209  INFO 15355 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:41:02:210  INFO 15355 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:41:02:216  INFO 15355 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:41:02:217  INFO 15355 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:41:03:103  INFO 15355 --- [keyCenter] [main] testAES                                  : 加密后：1jR9pTMUQa2lItrBQOLYlg==
+16:41:03:105  INFO 15355 --- [keyCenter] [main] testAES                                  : 解密后：123456789
+16:41:03:146  WARN 15355 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:41:03:145  WARN 15355 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:41:03:147  WARN 15355 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:41:03:150  WARN 15355 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:43:22:040  INFO 15476 --- [keyCenter] [main] testAES                                  : Starting testAES using Java 17.0.11 with PID 15476 (started by znly in /Users/znly/IdeaProjects/key-center)
+16:43:22:044  INFO 15476 --- [keyCenter] [main] testAES                                  : No active profile set, falling back to 1 default profile: "default"
+16:43:22:083  INFO 15476 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:43:23:078  INFO 15476 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce4d92fd-1bd5-3e29-95de-cdc981e6bc60
+16:43:23:139  INFO 15476 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:43:23:139  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:43:23:140  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:141  INFO 15476 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:43:23:354  INFO 15476 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:43:23:392  INFO 15476 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:43:23:415  INFO 15476 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:43:23:416  INFO 15476 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:43:24:203  INFO 15476 --- [keyCenter] [main] testAES                                  : Started testAES in 4.956 seconds (process running for 5.865)
+16:43:24:207  INFO 15476 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:43:24:208  INFO 15476 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:43:24:209  INFO 15476 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:43:24:215  INFO 15476 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:43:24:216  INFO 15476 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:43:24:949  INFO 15476 --- [keyCenter] [main] testAES                                  : 偏移量：82db05ba20ae438b
+16:43:24:967  INFO 15476 --- [keyCenter] [main] testAES                                  : 加密后：PFYqTpeuyX2oQdgtq5mgEA==
+16:43:24:969  INFO 15476 --- [keyCenter] [main] testAES                                  : 解密后：123456789
+16:43:24:987  WARN 15476 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:43:24:987  WARN 15476 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:43:24:988  WARN 15476 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:43:24:988  WARN 15476 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:43:58:958  INFO 15514 --- [keyCenter] [main] testAES                                  : Starting testAES using Java 17.0.11 with PID 15514 (started by znly in /Users/znly/IdeaProjects/key-center)
+16:43:58:960  INFO 15514 --- [keyCenter] [main] testAES                                  : No active profile set, falling back to 1 default profile: "default"
+16:43:59:018  INFO 15514 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:44:00:099  INFO 15514 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce4d92fd-1bd5-3e29-95de-cdc981e6bc60
+16:44:00:195  INFO 15514 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:44:00:196  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:44:00:198  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:44:00:199  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:44:00:199  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:199  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:200  INFO 15514 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:00:416  INFO 15514 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:44:00:449  INFO 15514 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:44:00:471  INFO 15514 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:44:00:473  INFO 15514 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:44:01:269  INFO 15514 --- [keyCenter] [main] testAES                                  : Started testAES in 6.201 seconds (process running for 7.171)
+16:44:01:272  INFO 15514 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:44:01:273  INFO 15514 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:44:01:274  INFO 15514 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:44:01:282  INFO 15514 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:44:01:282  INFO 15514 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:44:02:039  INFO 15514 --- [keyCenter] [main] testAES                                  : 偏移量：788f95be421547ed
+16:44:02:058  INFO 15514 --- [keyCenter] [main] testAES                                  : 加密后：9nJ33slUiX+AUG+Lp2Hk8Q==
+16:44:02:060  INFO 15514 --- [keyCenter] [main] testAES                                  : 解密后：123456789
+16:44:02:077  WARN 15514 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:44:02:077  WARN 15514 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:44:02:078  WARN 15514 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:44:02:078  WARN 15514 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:44:20:046  INFO 15530 --- [keyCenter] [main] testAES                                  : Starting testAES using Java 17.0.11 with PID 15530 (started by znly in /Users/znly/IdeaProjects/key-center)
+16:44:20:048  INFO 15530 --- [keyCenter] [main] testAES                                  : No active profile set, falling back to 1 default profile: "default"
+16:44:20:088  INFO 15530 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:44:21:046  INFO 15530 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ce4d92fd-1bd5-3e29-95de-cdc981e6bc60
+16:44:21:104  INFO 15530 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:44:21:104  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:44:21:105  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource test [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:105  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Inlined Test Properties [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:106  INFO 15530 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:44:21:297  INFO 15530 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:44:21:330  INFO 15530 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:44:21:355  INFO 15530 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:44:21:357  INFO 15530 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:44:22:160  INFO 15530 --- [keyCenter] [main] testAES                                  : Started testAES in 4.568 seconds (process running for 5.485)
+16:44:22:165  INFO 15530 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:44:22:165  INFO 15530 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:44:22:166  INFO 15530 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:44:22:172  INFO 15530 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:44:22:173  INFO 15530 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:44:22:968  INFO 15530 --- [keyCenter] [main] testAES                                  : 偏移量：84206a86a8444449
+16:44:22:987  INFO 15530 --- [keyCenter] [main] testAES                                  : 加密后：rHmkpXGXCWbXeJQx4tejfA==
+16:44:22:988  INFO 15530 --- [keyCenter] [main] testAES                                  : 解密后：123456789
+16:44:23:004  WARN 15530 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:44:23:004  WARN 15530 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:44:23:005  WARN 15530 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:44:23:005  WARN 15530 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end

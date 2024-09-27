@@ -2,6 +2,7 @@ package com.crayon.controller;
 
 import com.crayon.facade.JasyptFacade;
 import com.crayon.model.Result;
+import com.crayon.utils.AESUtil;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -25,6 +26,9 @@ public class MainController {
     @Autowired
     JasyptFacade jasyptFacade;
 
+    @Autowired
+    AESUtil aesUtil;
+
     @PostMapping("/encrypt")
     public Result encrypt(@RequestBody Map<String, String> data, HttpServletRequest request) {
         String str = data.get("str");
@@ -32,7 +36,8 @@ public class MainController {
             return Result.fail("明文不能为空");
         }
         String encrypt = jasyptFacade.encrypt(str);
-        return Result.success("加密成功", encrypt);
+        Map<String, String> map = Map.of("encrypt", encrypt);
+        return Result.success("加密成功", map);
     }
 
     @PostMapping("/decrypt")
@@ -44,7 +49,77 @@ public class MainController {
         if (null == decrypt) {
             return Result.fail("密文被篡改");
         }
-        return Result.success("解密成功", decrypt);
+        Map<String, String> map = Map.of("decrypt", decrypt);
+        return Result.success("解密成功", map);
     }
+
+    @PostMapping("/encryptByAES")
+    public Result encryptByAES(@RequestBody Map<String, String> data, HttpServletRequest request) {
+        String str = data.get("str");
+        if (StringUtils.isBlank(str)) {
+            return Result.fail("明文不能为空");
+        }
+        String encrypt = null;
+        try {
+            encrypt = aesUtil.encrypt(str);
+        } catch (Exception e) {
+            log.error("加密失败", e);
+            return Result.fail("加密失败");
+        }
+        return Result.success("加密成功", encrypt);
+    }
+
+    @PostMapping("/decryptByAES")
+    public Result decryptByAES(@RequestBody Map<String, String> data, HttpServletRequest request) {
+        if (data.isEmpty()) {
+            return Result.fail("密文不能为空");
+        }
+        String decrypt = null;
+        try {
+            decrypt = aesUtil.decrypt(data.get("str"));
+        } catch (Exception e) {
+            log.error("解密失败", e);
+            return Result.fail("解密失败");
+        }
+        Map<String, String> map = Map.of("decrypt", decrypt);
+        return Result.success("解密成功", map);
+    }
+
+    @PostMapping("/encryptByAES2")
+    public Result encryptByAESWithRandomVectorKey(@RequestBody Map<String, String> data, HttpServletRequest request) {
+        String str = data.get("str");
+        if (StringUtils.isBlank(str)) {
+            return Result.fail("明文不能为空");
+        }
+        String encrypt = null;
+        String vectorKey = AESUtil.generateVectorKey();
+        try {
+            encrypt = aesUtil.encrypt(str, vectorKey);
+        } catch (Exception e) {
+            log.error("加密失败", e);
+            return Result.fail("加密失败");
+        }
+        Map<String, String> map = Map.of("encrypt", encrypt, "vectorKey", vectorKey);
+        return Result.success("加密成功", map);
+    }
+
+    @PostMapping("/decryptByAES2")
+    public Result decryptByAESWithRandomVectorKey(@RequestBody Map<String, String> data, HttpServletRequest request) {
+        if (data.isEmpty()) {
+            return Result.fail("密文不能为空");
+        }
+        String decrypt = null;
+        String encrypt = data.get("str");
+        String vectorKey = data.get("vectorKey");
+        try {
+            decrypt = aesUtil.decrypt(encrypt, vectorKey);
+        } catch (Exception e) {
+            log.error("解密失败", e);
+            return Result.fail("解密失败");
+        }
+        Map<String, String> map = Map.of("decrypt", decrypt);
+        return Result.success("解密成功", map);
+    }
+
 
 }
