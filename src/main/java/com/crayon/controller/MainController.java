@@ -29,6 +29,13 @@ public class MainController {
     @Autowired
     AESUtil aesUtil;
 
+    /**
+     * 使用jasypt加密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/encrypt")
     public Result encrypt(@RequestBody Map<String, String> data, HttpServletRequest request) {
         String str = data.get("str");
@@ -40,6 +47,13 @@ public class MainController {
         return Result.success("加密成功", map);
     }
 
+    /**
+     * 使用jasypt解密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/decrypt")
     public Result decrypt(@RequestBody Map<String, String> data, HttpServletRequest request) {
         if (data.isEmpty()) {
@@ -53,6 +67,13 @@ public class MainController {
         return Result.success("解密成功", map);
     }
 
+    /**
+     * 使用固定的向量值加密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/encryptByAES")
     public Result encryptByAES(@RequestBody Map<String, String> data, HttpServletRequest request) {
         String str = data.get("str");
@@ -69,6 +90,13 @@ public class MainController {
         return Result.success("加密成功", encrypt);
     }
 
+    /**
+     * 使用固定的向量值解密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/decryptByAES")
     public Result decryptByAES(@RequestBody Map<String, String> data, HttpServletRequest request) {
         if (data.isEmpty()) {
@@ -85,6 +113,13 @@ public class MainController {
         return Result.success("解密成功", map);
     }
 
+    /**
+     * 使用随机生成的向量值加密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/encryptByAES2")
     public Result encryptByAESWithRandomVectorKey(@RequestBody Map<String, String> data, HttpServletRequest request) {
         String str = data.get("str");
@@ -103,6 +138,13 @@ public class MainController {
         return Result.success("加密成功", map);
     }
 
+    /**
+     * 使用随机生成的向量值解密
+     *
+     * @param data
+     * @param request
+     * @return
+     */
     @PostMapping("/decryptByAES2")
     public Result decryptByAESWithRandomVectorKey(@RequestBody Map<String, String> data, HttpServletRequest request) {
         if (data.isEmpty()) {
