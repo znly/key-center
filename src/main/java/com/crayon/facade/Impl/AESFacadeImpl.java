@@ -146,15 +146,4 @@ public class AESFacadeImpl implements AESFacade {
         byte[] decrypted = cipher.doFinal(content);
         return new String(decrypted);
     }
-
-    /**
-     * 随机生成向量值
-     *
-     * @return
-     */
-    public static String generateVectorKey() {
-        return UUID.randomUUID().toString().replace("-", "").substring(0, 16);
-    }
-
-
 }
