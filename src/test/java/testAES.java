@@ -1,4 +1,5 @@
 import com.crayon.KeyCenterApplication;
+import com.crayon.facade.AESFacade;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -17,26 +18,26 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class testAES {
 
     @Autowired
-    private AESUtil aesUtil;
+    private AESFacade aesFacade;
 
 
     @Test
     public void testEncrypt() throws Exception
     {
-        String encrypt = aesUtil.encrypt("123456789");
+        String encrypt = aesFacade.encrypt("123456789");
         log.info("加密后：{}", encrypt);
-        String decrypt = aesUtil.decrypt(encrypt);
+        String decrypt = aesFacade.decrypt(encrypt);
         log.info("解密后：{}", decrypt);
     }
 
     @Test
     public void testEncryptWithRandomKey() throws Exception
     {
-        String vectorKey = AESUtil.generateVectorKey();
+        String vectorKey = AESFacade.generateVectorKey();
         log.info("偏移量：{}",vectorKey);
-        String encrypt = aesUtil.encrypt("123456789",vectorKey);
+        String encrypt = aesFacade.encrypt("123456789",vectorKey);
         log.info("加密后：{}", encrypt);
-        String decrypt = aesUtil.decrypt(encrypt,vectorKey);
+        String decrypt = aesFacade.decrypt(encrypt,vectorKey);
         log.info("解密后：{}", decrypt);
     }
 
