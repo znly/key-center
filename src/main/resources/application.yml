@@ -1,0 +1,46 @@
+spring:
+  cloud:
+    nacos:
+      serverAddr: 8.138.18.180:8848
+      config:
+        username: znly
+        password: zz123456
+        encode: utf-8
+        server-addr: 8.138.18.180:8848
+        prefix: key
+        group: prod-group
+        namespace: b51c53b7-9336-4904-b126-eec1fc2ce6e3
+        refresh-enabled: true
+  config:
+    import:
+      - optional:nacos:key-center.yml?refreshEnabled=true
+  application:
+    name: keyCenter
+
+
+
+
+
+# dubbo配置
+#dubbo:
+#  application:
+#    name: dubbo-crayonBlog-provider
+#    qos-port: 33332
+#  protocol:
+#    name: dubbo
+#    port: -1
+#  registry:
+#    address: nacos://8.138.18.180:8848
+#    username: znly
+#    password: zz123456
+#    parameters:
+#      namespace: b51c53b7-9336-4904-b126-eec1fc2ce6e3
+#    group: dubbo-crayonBlog-provider
+
+
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"

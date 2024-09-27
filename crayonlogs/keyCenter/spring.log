@@ -1,0 +1,259 @@
+16:01:02:016  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Starting KeyCenterApplication using Java 17.0.11 with PID 11753 (/Users/znly/IdeaProjects/key-center/target/classes started by znly in /Users/znly/IdeaProjects/key-center)
+16:01:02:034  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : No active profile set, falling back to 1 default profile: "default"
+16:01:02:098  INFO 11753 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:01:03:024  INFO 11753 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6dabd3bf-2d3a-3671-ac8e-ced090099be5
+16:01:03:096  INFO 11753 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:01:03:097  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:01:03:098  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:01:03:099  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:01:03:099  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:01:03:099  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:01:03:639  INFO 11753 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+16:01:03:658  INFO 11753 --- [keyCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:01:03:659  INFO 11753 --- [keyCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+16:01:03:733  INFO 11753 --- [keyCenter] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:01:03:733  INFO 11753 --- [keyCenter] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1634 ms
+16:01:03:817  INFO 11753 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:01:04:364  INFO 11753 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:01:04:381  INFO 11753 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:01:04:383  INFO 11753 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:01:05:524  INFO 11753 --- [keyCenter] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:01:05:858  INFO 11753 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path ''
+16:01:05:869  INFO 11753 --- [keyCenter] [main] u.j.c.RefreshScopeRefreshedEventListener : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+16:01:05:870  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemProperties refreshed
+16:01:05:870  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemEnvironment refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source random refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source cachedrandom refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source prod-group@key-center.yml refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source springCloudClientHostInfo refreshed
+16:01:05:871  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:01:05:871  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:01:05:871  INFO 11753 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:01:06:881  INFO 11753 --- [keyCenter] [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+16:01:06:919  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Started KeyCenterApplication in 10.32 seconds (process running for 11.203)
+16:01:06:929  INFO 11753 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:01:06:929  INFO 11753 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:01:06:933  INFO 11753 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:01:06:941  INFO 11753 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:01:06:941  INFO 11753 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:01:06:942  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : -------------------Crayon项目成功启动-------------------
+16:01:06:947  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 当前时间:2024-09-27 16:01:06
+16:01:06:950  INFO 11753 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 配置中心地址:http://8.138.18.180:8848/nacos
+16:02:38:236  WARN 11753 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:02:38:236  WARN 11753 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:02:38:244  WARN 11753 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:02:38:242  WARN 11753 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:02:46:266  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Starting KeyCenterApplication using Java 17.0.11 with PID 11972 (/Users/znly/IdeaProjects/key-center/target/classes started by znly in /Users/znly/IdeaProjects/key-center)
+16:02:46:269  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : No active profile set, falling back to 1 default profile: "default"
+16:02:46:503  INFO 11972 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:02:48:059  INFO 11972 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6dabd3bf-2d3a-3671-ac8e-ced090099be5
+16:02:48:136  INFO 11972 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:02:48:136  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:02:48:137  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:02:48:137  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:02:48:138  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:02:48:694  INFO 11972 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+16:02:48:707  INFO 11972 --- [keyCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:02:48:708  INFO 11972 --- [keyCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+16:02:48:756  INFO 11972 --- [keyCenter] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:02:48:757  INFO 11972 --- [keyCenter] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2247 ms
+16:02:48:830  INFO 11972 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:02:49:326  INFO 11972 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:02:49:343  INFO 11972 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:02:49:344  INFO 11972 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:02:49:564  INFO 11972 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path ''
+16:02:49:572  INFO 11972 --- [keyCenter] [main] u.j.c.RefreshScopeRefreshedEventListener : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemProperties refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemEnvironment refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source random refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source cachedrandom refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source prod-group@key-center.yml refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+16:02:49:573  INFO 11972 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source springCloudClientHostInfo refreshed
+16:02:49:574  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:02:49:574  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:02:49:575  INFO 11972 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:02:49:588  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Started KeyCenterApplication in 7.201 seconds (process running for 7.809)
+16:02:49:593  INFO 11972 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:02:49:593  INFO 11972 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:02:49:594  INFO 11972 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:02:49:599  INFO 11972 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:02:49:599  INFO 11972 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:02:49:600  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : -------------------Crayon项目成功启动-------------------
+16:02:49:603  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 当前时间:2024-09-27 16:02:49
+16:02:49:605  INFO 11972 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 配置中心地址:http://8.138.18.180:8848/nacos
+16:03:56:407  WARN 11972 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:03:56:407  WARN 11972 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:03:56:413  WARN 11972 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:03:56:414  WARN 11972 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:04:07:995  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Starting KeyCenterApplication using Java 17.0.11 with PID 12103 (/Users/znly/IdeaProjects/key-center/target/classes started by znly in /Users/znly/IdeaProjects/key-center)
+16:04:07:998  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : No active profile set, falling back to 1 default profile: "default"
+16:04:08:080  INFO 12103 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:04:09:058  INFO 12103 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6dabd3bf-2d3a-3671-ac8e-ced090099be5
+16:04:09:121  INFO 12103 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:04:09:122  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:04:09:122  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:04:09:123  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:04:09:123  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:04:09:123  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:04:09:123  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:04:09:123  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:04:09:124  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:04:09:124  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:04:09:125  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:04:09:601  INFO 12103 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+16:04:09:611  INFO 12103 --- [keyCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:04:09:612  INFO 12103 --- [keyCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+16:04:09:663  INFO 12103 --- [keyCenter] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:04:09:663  INFO 12103 --- [keyCenter] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1581 ms
+16:04:09:729  INFO 12103 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:04:10:123  INFO 12103 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:04:10:136  INFO 12103 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:04:10:143  INFO 12103 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:04:10:308  INFO 12103 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path ''
+16:04:10:312  INFO 12103 --- [keyCenter] [main] u.j.c.RefreshScopeRefreshedEventListener : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+16:04:10:312  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemProperties refreshed
+16:04:10:312  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemEnvironment refreshed
+16:04:10:312  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source random refreshed
+16:04:10:312  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source cachedrandom refreshed
+16:04:10:312  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source prod-group@key-center.yml refreshed
+16:04:10:313  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+16:04:10:313  INFO 12103 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source springCloudClientHostInfo refreshed
+16:04:10:313  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:04:10:314  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:04:10:314  INFO 12103 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:04:10:329  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Started KeyCenterApplication in 7.169 seconds (process running for 7.675)
+16:04:10:335  INFO 12103 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:04:10:335  INFO 12103 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:04:10:338  INFO 12103 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:04:10:343  INFO 12103 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:04:10:343  INFO 12103 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:04:10:344  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : -------------------Crayon项目成功启动-------------------
+16:04:10:354  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 当前时间:2024-09-27 16:04:10
+16:04:10:372  INFO 12103 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 配置中心地址:http://8.138.18.180:8848/nacos
+16:04:43:666  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:04:43:669  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:04:43:680  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+16:04:43:785  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+16:04:43:809  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+16:04:43:810  INFO 12103 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+16:05:28:607  WARN 12103 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:05:28:607  WARN 12103 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:05:28:611  WARN 12103 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:05:28:616  WARN 12103 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:05:36:138  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Starting KeyCenterApplication using Java 17.0.11 with PID 12254 (/Users/znly/IdeaProjects/key-center/target/classes started by znly in /Users/znly/IdeaProjects/key-center)
+16:05:36:140  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : No active profile set, falling back to 1 default profile: "default"
+16:05:36:237  INFO 12254 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:05:37:641  INFO 12254 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6dabd3bf-2d3a-3671-ac8e-ced090099be5
+16:05:37:733  INFO 12254 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:05:37:734  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:05:37:735  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:05:37:735  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:05:37:735  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:05:37:736  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:05:38:279  INFO 12254 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+16:05:38:291  INFO 12254 --- [keyCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:05:38:293  INFO 12254 --- [keyCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+16:05:38:340  INFO 12254 --- [keyCenter] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:05:38:340  INFO 12254 --- [keyCenter] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2101 ms
+16:05:38:426  INFO 12254 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:05:38:867  INFO 12254 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:05:38:877  INFO 12254 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:05:38:879  INFO 12254 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:05:39:043  INFO 12254 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path ''
+16:05:39:047  INFO 12254 --- [keyCenter] [main] u.j.c.RefreshScopeRefreshedEventListener : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemProperties refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemEnvironment refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source random refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source cachedrandom refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source prod-group@key-center.yml refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+16:05:39:048  INFO 12254 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source springCloudClientHostInfo refreshed
+16:05:39:049  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:05:39:049  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:05:39:049  INFO 12254 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:05:39:060  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Started KeyCenterApplication in 6.438 seconds (process running for 7.021)
+16:05:39:066  INFO 12254 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:05:39:066  INFO 12254 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:05:39:068  INFO 12254 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:05:39:074  INFO 12254 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:05:39:074  INFO 12254 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:05:39:075  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : -------------------Crayon项目成功启动-------------------
+16:05:39:083  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 当前时间:2024-09-27 16:05:39
+16:05:39:089  INFO 12254 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 配置中心地址:http://8.138.18.180:8848/nacos
+16:06:19:617  WARN 12254 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:06:19:617  WARN 12254 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:06:19:622  WARN 12254 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:06:19:623  WARN 12254 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+16:07:03:973  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Starting KeyCenterApplication using Java 17.0.11 with PID 12409 (/Users/znly/IdeaProjects/key-center/target/classes started by znly in /Users/znly/IdeaProjects/key-center)
+16:07:03:976  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : No active profile set, falling back to 1 default profile: "default"
+16:07:04:074  INFO 12409 --- [keyCenter] [main] c.a.c.n.c.NacosConfigDataLoader          : [Nacos Config] Load config[dataId=key-center.yml, group=prod-group] success
+16:07:05:019  INFO 12409 --- [keyCenter] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=6dabd3bf-2d3a-3671-ac8e-ced090099be5
+16:07:05:091  INFO 12409 --- [keyCenter] [main] ptablePropertiesBeanFactoryPostProcessor : Post-processing PropertySource instances
+16:07:05:092  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletContextInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemProperties [org.springframework.core.env.PropertiesPropertySource] to EncryptableMapPropertySourceWrapper
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource systemEnvironment [org.springframework.boot.env.SystemEnvironmentPropertySourceEnvironmentPostProcessor$OriginAwareSystemEnvironmentPropertySource] to EncryptableSystemEnvironmentPropertySourceWrapper
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource random [org.springframework.boot.env.RandomValuePropertySource] to EncryptablePropertySourceWrapper
+16:07:05:093  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource cachedrandom [org.springframework.cloud.util.random.CachedRandomPropertySource] to EncryptablePropertySourceWrapper
+16:07:05:094  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource prod-group@key-center.yml [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:07:05:094  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' [org.springframework.boot.env.OriginTrackedMapPropertySource] to EncryptableMapPropertySourceWrapper
+16:07:05:094  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource springCloudClientHostInfo [org.springframework.core.env.MapPropertySource] to EncryptableMapPropertySourceWrapper
+16:07:06:134  INFO 12409 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9999 (http)
+16:07:06:147  INFO 12409 --- [keyCenter] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+16:07:06:147  INFO 12409 --- [keyCenter] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+16:07:06:217  INFO 12409 --- [keyCenter] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+16:07:06:218  INFO 12409 --- [keyCenter] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
+16:07:06:301  INFO 12409 --- [keyCenter] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation should only be used on methods with parameters: public void com.crayon.aop.RepeatSubmitAspect.repeatSubmit()
+16:07:07:181  INFO 12409 --- [keyCenter] [main] c.u.j.filter.DefaultLazyPropertyFilter   : Property Filter custom Bean not found with name 'encryptablePropertyFilter'. Initializing Default Property Filter
+16:07:07:193  INFO 12409 --- [keyCenter] [main] c.u.j.r.DefaultLazyPropertyResolver      : Property Resolver custom Bean not found with name 'encryptablePropertyResolver'. Initializing Default Property Resolver
+16:07:07:195  INFO 12409 --- [keyCenter] [main] c.u.j.d.DefaultLazyPropertyDetector      : Property Detector custom Bean not found with name 'encryptablePropertyDetector'. Initializing Default Property Detector
+16:07:07:454  INFO 12409 --- [keyCenter] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9999 (http) with context path ''
+16:07:07:468  INFO 12409 --- [keyCenter] [main] u.j.c.RefreshScopeRefreshedEventListener : Refreshing cached encryptable property sources on ServletWebServerInitializedEvent
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemProperties refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source systemEnvironment refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source random refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source cachedrandom refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source prod-group@key-center.yml refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source Config resource 'class path resource [application.yml]' via location 'optional:classpath:/' refreshed
+16:07:07:468  INFO 12409 --- [keyCenter] [main] CachingDelegateEncryptablePropertySource : Property Source springCloudClientHostInfo refreshed
+16:07:07:469  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource configurationProperties [class org.springframework.boot.context.properties.source.ConfigurationPropertySourcesPropertySource
+16:07:07:469  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Skipping PropertySource servletConfigInitParams [class org.springframework.core.env.PropertySource$StubPropertySource
+16:07:07:469  INFO 12409 --- [keyCenter] [main] c.u.j.EncryptablePropertySourceConverter : Converting PropertySource servletContextInitParams [org.springframework.web.context.support.ServletContextPropertySource] to EncryptableEnumerablePropertySourceWrapper
+16:07:07:483  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : Started KeyCenterApplication in 7.482 seconds (process running for 8.156)
+16:07:07:493  INFO 12409 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : config listener notify warn timeout millis use default 60000 millis 
+16:07:07:494  INFO 12409 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : nacos.cache.data.init.snapshot = true 
+16:07:07:509  INFO 12409 --- [keyCenter] [main] c.a.n.client.config.impl.ClientWorker    : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [subscribe] key-center.yml+prod-group+b51c53b7-9336-4904-b126-eec1fc2ce6e3
+16:07:07:518  INFO 12409 --- [keyCenter] [main] c.a.nacos.client.config.impl.CacheData   : [fixed-b51c53b7-9336-4904-b126-eec1fc2ce6e3-8.138.18.180_8848] [add-listener] ok, tenant=b51c53b7-9336-4904-b126-eec1fc2ce6e3, dataId=key-center.yml, group=prod-group, cnt=1
+16:07:07:519  INFO 12409 --- [keyCenter] [main] c.a.c.n.refresh.NacosContextRefresher    : [Nacos Config] Listening config: dataId=key-center.yml, group=prod-group
+16:07:07:520  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : -------------------Crayon项目成功启动-------------------
+16:07:07:525  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 当前时间:2024-09-27 16:07:07
+16:07:07:528  INFO 12409 --- [keyCenter] [main] com.crayon.KeyCenterApplication          : 配置中心地址:http://8.138.18.180:8848/nacos
+16:07:22:509  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:07:22:510  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+16:07:22:517  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+16:07:22:614  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.encryptor.DefaultLazyEncryptor     : String Encryptor custom Bean not found with name 'jasyptStringEncryptor'. Initializing Default String Encryptor
+16:07:22:655  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-name, using default value: null
+16:07:22:658  INFO 12409 --- [keyCenter] [http-nio-9999-exec-2] c.u.j.c.StringEncryptorBuilder           : Encryptor config not found for property jasypt.encryptor.provider-class-name, using default value: null
+16:08:48:396  WARN 12409 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+16:08:48:396  WARN 12409 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+16:08:48:404  WARN 12409 --- [keyCenter] [Thread-3] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+16:08:48:407  WARN 12409 --- [keyCenter] [Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
